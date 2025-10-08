@@ -1,67 +1,88 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="google-site-verification" content="k4LlPh3yYePeZERDoiBLoGp24W28Fg0UqTHx3HNujLE" />
-  <title>Sat Thep Loc Thien – Premium Steel Distributor for Modern Construction</title>
-  <meta name="description" content="Lộc Thiên Steel cung cấp thép xây dựng chất lượng cao, đa dạng chủng loại, giao hàng nhanh và dịch vụ tư vấn chuyên nghiệp tại miền Nam Việt Nam." />
+
+  <title>Sat Thep Loc Thien – Nhà phân phối thép uy tín cho mọi công trình</title>
+  <meta name="description" content="Sat Thep Loc Thien cung cấp giải pháp thép toàn diện: ống thép, thép hộp, thép hình, thép tấm và phụ kiện – tư vấn kỹ thuật, gia công theo yêu cầu, giao hàng đúng tiến độ tại miền Nam Việt Nam." />
+  <link rel="canonical" href="https://sattheplocthien.com/" />
   <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sat Thep Loc Thien – Nhà phân phối thép uy tín cho mọi công trình" />
+  <meta property="og:description" content="Giải pháp thép toàn diện, giao nhanh, giá cạnh tranh, dịch vụ tận tâm." />
+  <meta property="og:url" content="https://sattheplocthien.com/" />
+  <meta property="og:image" content="https://sattheplocthien.com/wp-content/uploads/2025/08/SAT-THEP-LOC-THIEN.jpg" />
+  <meta property="og:type" content="website" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
   <style>
-    :root {
-      --bg: #f9fafb;
-      --fg: #111827;
-      --muted: #4b5563;
-      --brand: #1e3a8a;
-      --accent: #e5e7eb;
-      --pill: #eff6ff;
+    :root{
+      --bg:#f9fafb; --fg:#0f172a; --muted:#475569; --brand:#1e3a8a; --accent:#e5e7eb; --paper:#ffffff;
+      --pill:#eff6ff; --ring:rgba(30,58,138,.14);
     }
-    *{box-sizing:border-box;}
+    *{box-sizing:border-box}
     body{
-      margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-      background:var(--bg);
-      color:var(--fg);
-      line-height:1.7;
+      margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;
+      color:var(--fg); background:var(--bg); line-height:1.7;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
     }
-    .container{max-width:1100px;margin:auto;padding:40px 20px;}
-    header{padding-bottom:24px;border-bottom:2px solid var(--accent);}
-    h1{margin:0;font-size:clamp(28px,3vw,44px);}
-    p.lead{font-size:clamp(16px,2vw,20px);color:var(--muted);}
+    a{color:var(--brand); text-decoration:none}
+    a:hover{opacity:.9}
+    .container{max-width:1120px; margin:auto; padding:40px 20px}
+    header{padding-bottom:24px; border-bottom:2px solid var(--accent)}
+    h1{margin:0; font-size:clamp(28px,3.2vw,44px); letter-spacing:.2px}
+    p.lead{font-size:clamp(16px,2.1vw,20px); color:var(--muted); margin:10px 0 0}
     .hero img{
-      width:100%;
-      height:auto;
-      border-radius:12px;
-      border:1px solid var(--accent);
-      box-shadow:0 8px 20px rgba(0,0,0,.06);
-      margin-top:18px;
+      width:100%; height:auto; margin-top:18px; border-radius:14px;
+      border:1px solid var(--accent); box-shadow:0 10px 24px var(--ring)
     }
-    section{padding:32px 0;border-bottom:1px solid var(--accent);}
-    h2{margin-top:0;font-size:clamp(20px,2.4vw,28px);}
-    .pill{display:inline-block;padding:6px 14px;border-radius:999px;background:var(--pill);font-weight:600;}
-    .grid{display:grid;gap:20px;}
-    @media(min-width:800px){.grid{grid-template-columns:1fr 1fr;}}
-    .card{background:#fff;border:1px solid var(--accent);border-radius:12px;padding:18px;}
-    ul{margin:12px 0 0 20px;}
-    li{margin:8px 0;}
-    .btn{display:inline-block;padding:10px 18px;border-radius:8px;font-weight:600;text-decoration:none;}
-    .btn-primary{background:var(--brand);color:#fff;}
-    .btn-outline{border:1px solid var(--brand);color:var(--brand);background:transparent;}
-    footer{padding-top:24px;font-size:14px;color:var(--muted);}
-    a{color:var(--brand);}
+
+    section{padding:32px 0; border-bottom:1px solid var(--accent)}
+    h2{margin:0 0 12px; font-size:clamp(20px,2.6vw,30px)}
+    .muted{color:var(--muted)}
+    .grid{display:grid; gap:20px}
+    @media (min-width:800px){ .grid-2{grid-template-columns:1fr 1fr} .grid-3{grid-template-columns:repeat(3,1fr)} .grid-6{grid-template-columns:repeat(6,1fr)} }
+
+    .card{background:var(--paper); border:1px solid var(--accent); border-radius:14px; padding:18px}
+    .pill{display:inline-block; padding:6px 12px; background:var(--pill); border-radius:999px; font-weight:600}
+
+    /* Featured product tiles */
+    .tiles{display:grid; gap:16px; grid-template-columns:repeat(2,1fr)}
+    @media(min-width:640px){ .tiles{grid-template-columns:repeat(3,1fr)} }
+    @media(min-width:1024px){ .tiles{grid-template-columns:repeat(6,1fr)} }
+    .tile{background:#fff; border:1px solid var(--accent); border-radius:12px; padding:14px; text-align:center; transition:transform .15s ease, box-shadow .15s ease}
+    .tile:hover{transform:translateY(-2px); box-shadow:0 8px 20px var(--ring)}
+    .tile .imgwrap{width:68%; margin:0 auto 10px}
+    .tile img{width:100%; height:auto; display:block}
+    .tile h3{margin:6px 0 6px; font-size:16px}
+    .tile p{margin:0; font-size:13px; color:var(--muted)}
+
+    .cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:10px}
+    .btn{
+      display:inline-block; padding:10px 16px; border-radius:10px; font-weight:600; border:1px solid var(--brand);
+    }
+    .btn-primary{background:var(--brand); color:#fff}
+    .btn-outline{background:transparent; color:var(--brand)}
+
+    address{font-style:normal}
+    footer{padding-top:28px; font-size:14px; color:var(--muted)}
   </style>
 </head>
 <body>
   <main class="container">
+    <!-- ======= HERO ======= -->
     <header>
-      <h1>Sat Thep Loc Thien – Premium Steel Distributor for Modern Construction</h1>
-      <p class="lead">Chúng tôi cung cấp giải pháp thép toàn diện cho các công trình dân dụng, công nghiệp và hạ tầng với chất lượng ổn định, tư vấn tận tâm và giao hàng đúng tiến độ.</p>
+      <h1>Sat Thep Loc Thien – Nhà phân phối thép uy tín cho mọi công trình</h1>
+      <p class="lead">Giải pháp thép toàn diện cho dân dụng, công nghiệp và hạ tầng: chất lượng ổn định, tư vấn kỹ thuật tận tâm, gia công theo yêu cầu và giao hàng đúng tiến độ.</p>
 
-      <!-- Hero Image -->
+      <!-- Ảnh Hero -->
       <figure class="hero">
         <img
           src="https://sattheplocthien.com/wp-content/uploads/2025/08/SAT-THEP-LOC-THIEN.jpg"
-          alt="Tru So Sat Thep Loc Thien"
+          alt="Kho thép và sản phẩm tiêu biểu tại Sat Thep Loc Thien"
           loading="eager"
           decoding="async"
           fetchpriority="high"
@@ -69,81 +90,223 @@
       </figure>
     </header>
 
-    <section>
-      <div class="grid">
+    <!-- ======= GIỚI THIỆU & ĐỊA CHỈ ======= -->
+    <section aria-labelledby="about">
+      <div class="grid grid-2">
         <div>
-          <p><strong>Sat Thep Loc Thien</strong> đặt trụ sở tại <strong>1001, Tổ 22, KP1, phường Long Hưng, TP. Biên Hòa, Đồng Nai</strong>. Với nhiều năm kinh nghiệm, chúng tôi trở thành đối tác tin cậy của hàng nghìn nhà thầu và chủ đầu tư, đồng hành trong các dự án lớn nhỏ khắp miền Nam.</p>
+          <h2 id="about">Vì sao chọn Sat Thep Loc Thien?</h2>
+          <p>
+            Với kinh nghiệm thực tế trên nhiều loại hình công trình, chúng tôi tối ưu từ khâu tư vấn chủng loại,
+            quy cách đến phương án gia công – vận chuyển tại công trường. Hệ thống kho quy mô lớn giúp luôn sẵn hàng
+            với số lượng ổn định, đáp ứng đơn gấp và các dự án dài hạn.
+          </p>
+          <ul>
+            <li>Hàng hóa đa dạng, chuẩn thông số – nguồn gốc rõ ràng.</li>
+            <li>Gia công cắt/uốn/dập theo bản vẽ; kiểm soát sai số chặt chẽ.</li>
+            <li>Giá cạnh tranh, chính sách linh hoạt theo nhu cầu tiến độ.</li>
+            <li>Giao nhanh, phối hợp bốc dỡ an toàn tại công trường.</li>
+          </ul>
         </div>
         <div class="card">
-          <span class="pill">Head Office</span>
-          <address>1001, Group 22, KP1, Long Hung Ward,<br>Bien Hoa City, Dong Nai Province</address>
+          <span class="pill" aria-label="Trụ sở">Trụ sở</span>
+          <address>
+            1001, Tổ 22, KP1, P. Long Hưng,<br />
+            TP. Biên Hòa, Đồng Nai
+          </address>
+          <p class="muted" style="margin:8px 0 0">Phục vụ khách hàng trên toàn khu vực miền Nam.</p>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>🏗️ Danh mục sản phẩm đa dạng</h2>
-      <p class="muted">Chúng tôi cung cấp đủ loại thép để đáp ứng yêu cầu kỹ thuật khắt khe:</p>
+    <!-- ======= DANH MỤC SẢN PHẨM ======= -->
+    <section aria-labelledby="catalog">
+      <h2 id="catalog">Danh mục sản phẩm</h2>
+      <p class="muted">Đáp ứng yêu cầu kỹ thuật khắt khe trong kết cấu và cơ điện:</p>
       <ul>
-        <li>Ống thép đen, ống thép mạ kẽm, ống thép hàn và ống thép không gỉ.</li>
-        <li>Thép hộp vuông, chữ nhật từ các thương hiệu uy tín như Hòa Phát, SEAH, Việt Đức, VinaOne…</li>
-        <li>Thép hình: U, I, H, V cho kết cấu công nghiệp và dân dụng.</li>
-        <li>Thép tấm SS400, Q345B, A36… với nhiều độ dày.</li>
-        <li>Phụ kiện thép: tấm gân, phụ kiện ren, phụ kiện hàn đạt chuẩn xuất khẩu.</li>
+        <li>Ống thép đen, mạ kẽm; ống hàn, ống đúc; một số quy cách inox theo nhu cầu.</li>
+        <li>Thép hộp vuông, chữ nhật – thương hiệu Hòa Phát, SEAH, Việt Đức, VinaOne…</li>
+        <li>Thép hình U/I/H/V cho kết cấu nhà xưởng, nhà thép tiền chế, dân dụng.</li>
+        <li>Thép tấm SS400, Q345B, A36/A572… đa dạng bề dày và khổ tấm.</li>
+        <li>Phụ kiện ống, tấm gân, phụ kiện ren/hàn – tiêu chuẩn xuất khẩu.</li>
       </ul>
-      <p>Hệ thống kho hàng rộng lớn giúp chúng tôi luôn sẵn sàng đáp ứng số lượng lớn và đơn hàng gấp.</p>
+      <p>Kho hàng lớn giúp sẵn sàng cấp số lượng lớn, đáp ứng đơn gấp và lịch giao chia đợt.</p>
     </section>
 
-    <section>
-      <h2>💡 Cam kết chất lượng & dịch vụ</h2>
-      <ul>
-        <li>Kiểm soát nguồn gốc – sản phẩm đạt tiêu chuẩn an toàn & bền vững.</li>
-        <li>Dịch vụ gia công (cắt, uốn, dập) chính xác theo yêu cầu.</li>
-        <li>Giao hàng nhanh, hỗ trợ linh hoạt theo tiến độ công trình.</li>
-        <li>Giá cả cạnh tranh, chính sách thanh toán thuận tiện.</li>
-      </ul>
+    <!-- ======= DANH MỤC SẢN PHẨM NỔI BẬT (CÓ HÌNH) ======= -->
+    <section aria-labelledby="featured">
+      <h2 id="featured" style="text-align:center;">DANH MỤC SẢN PHẨM NỔI BẬT</h2>
+
+      <!-- Lưới ảnh sản phẩm: dùng ảnh bạn cung cấp -->
+      <div class="tiles" role="list">
+        <!-- Ống thép đúc -->
+        <article class="tile" role="listitem">
+          <div class="imgwrap">
+            <img
+              src="https://sattheplocthien.com/wp-content/uploads/2025/08/Thep-ong-duc.png"
+              alt="Ống thép đúc"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h3>Ống Thép Đúc</h3>
+          <p>Bền chắc – kích thước đa dạng cho đường ống áp lực.</p>
+        </article>
+
+        <!-- Thép ống -->
+        <article class="tile" role="listitem">
+          <a href="https://sattheplocthien.com/ong-thep/" aria-label="Xem chi tiết thép ống">
+            <div class="imgwrap">
+              <img
+                src="https://sattheplocthien.com/wp-content/uploads/2025/08/Ong-thep.png"
+                alt="Thép ống"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </a>
+          <h3>Thép Ống</h3>
+          <p>Nhiều quy cách – giải pháp kinh tế cho kết cấu & MEP.</p>
+        </article>
+
+        <!-- Thép hộp -->
+        <article class="tile" role="listitem">
+          <div class="imgwrap">
+            <img
+              src="https://sattheplocthien.com/wp-content/uploads/2025/08/Thep-hop.png"
+              alt="Thép hộp"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h3>Thép Hộp</h3>
+          <p>Hộp vuông, hộp chữ nhật – đen & mạ kẽm, đủ tiêu chuẩn.</p>
+        </article>
+
+        <!-- Thép hình -->
+        <article class="tile" role="listitem">
+          <div class="imgwrap">
+            <img
+              src="https://sattheplocthien.com/wp-content/uploads/2025/08/Thep-hinh.png"
+              alt="Thép hình U/I/H/V"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h3>Thép Hình</h3>
+          <p>U/I/H/V – tối ưu chịu lực cho nhà xưởng & dân dụng.</p>
+        </article>
+
+        <!-- Thép tấm -->
+        <article class="tile" role="listitem">
+          <div class="imgwrap">
+            <img
+              src="https://sattheplocthien.com/wp-content/uploads/2025/08/Thep-tam.png"
+              alt="Thép tấm"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h3>Thép Tấm</h3>
+          <p>SS400, Q345B, A36/A572… bề dày và khổ tấm phong phú.</p>
+        </article>
+
+        <!-- Phụ kiện ống thép -->
+        <article class="tile" role="listitem">
+          <div class="imgwrap">
+            <img
+              src="https://sattheplocthien.com/wp-content/uploads/2025/08/Mat-bich.png"
+              alt="Phụ kiện ống thép"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h3>Phụ kiện Ống Thép</h3>
+          <p>Mặt bích, co, tê, măng sông… đồng bộ quy cách.</p>
+        </article>
+      </div>
+
+      <!-- (Tùy chọn) Schema.org ItemList cho featured -->
+      <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"ItemList",
+        "name":"Danh mục sản phẩm nổi bật",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Ống Thép Đúc"},
+          {"@type":"ListItem","position":2,"name":"Thép Ống","url":"https://sattheplocthien.com/ong-thep/"},
+          {"@type":"ListItem","position":3,"name":"Thép Hộp"},
+          {"@type":"ListItem","position":4,"name":"Thép Hình"},
+          {"@type":"ListItem","position":5,"name":"Thép Tấm"},
+          {"@type":"ListItem","position":6,"name":"Phụ kiện Ống Thép"}
+        ]
+      }
+      </script>
     </section>
 
-    <section>
-      <h2>📞 Liên hệ ngay để được hỗ trợ</h2>
-      <div class="grid">
+    <!-- ======= DỊCH VỤ & CAM KẾT ======= -->
+    <section aria-labelledby="service">
+      <h2 id="service">Dịch vụ & cam kết</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Tư vấn kỹ thuật</h3>
+          <p class="muted">Đề xuất chủng loại & quy cách phù hợp; tối ưu khối lượng và chi phí.</p>
+        </div>
+        <div class="card">
+          <h3>Gia công theo bản vẽ</h3>
+          <p class="muted">Cắt, uốn, dập – kiểm soát sai số và chứng từ kèm theo lô hàng.</p>
+        </div>
+        <div class="card">
+          <h3>Giao hàng đúng hẹn</h3>
+          <p class="muted">Điều phối lịch giao khoa học; hỗ trợ bốc dỡ an toàn tại công trường.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= LIÊN HỆ ======= -->
+    <section aria-labelledby="contact">
+      <h2 id="contact">Liên hệ</h2>
+      <div class="grid grid-2">
         <div class="card">
           <p><strong>Hotline:</strong> <a href="tel:+84858676679">+84 858 676 679</a></p>
           <p><strong>Địa chỉ:</strong> 1001, Tổ 22, KP1, P. Long Hưng, TP. Biên Hòa, Đồng Nai</p>
-          <p><strong>Website:</strong> <a href="http://sattheplocthien.com" rel="noopener">sattheplocthien.com</a></p>
-          <div>
-            <a class="btn btn-primary" href="tel:+84858676679">Gọi Ngay</a>
-            <a class="btn btn-outline" href="http://sattheplocthien.com" target="_blank" rel="noopener">Xem Website</a>
+          <p><strong>Website:</strong> <a href="https://sattheplocthien.com" target="_blank" rel="noopener">sattheplocthien.com</a></p>
+          <div class="cta">
+            <a class="btn btn-primary" href="tel:+84858676679">Gọi ngay</a>
+            <a class="btn btn-outline" href="https://sattheplocthien.com" target="_blank" rel="noopener">Xem website</a>
           </div>
         </div>
         <div>
-          <blockquote class="muted">“Lộc Thiên Steel – Giải pháp thép bền vững, hỗ trợ mọi dự án xây dựng vững chắc và an toàn.”</blockquote>
+          <blockquote class="muted" cite="https://sattheplocthien.com">
+            “Giải pháp thép bền vững – đồng hành cùng tiến độ và chất lượng công trình của bạn.”
+          </blockquote>
         </div>
       </div>
     </section>
 
     <footer>
-      © <span id="year"></span> Lộc Thiên Steel. All rights reserved.
+      © <span id="year"></span> Sat Thep Loc Thien. All rights reserved.
     </footer>
   </main>
 
   <script>
+    // Năm hiện tại
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
+  <!-- Schema.org Organization -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Lộc Thiên Steel",
-    "url": "http://sattheplocthien.com",
-    "telephone": "+84 858 676 679",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1001, Group 22, KP1, Long Hung Ward",
-      "addressLocality": "Bien Hoa City",
-      "addressRegion": "Dong Nai",
-      "addressCountry": "VN"
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Sat Thep Loc Thien",
+    "url":"https://sattheplocthien.com",
+    "telephone":"+84 858 676 679",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"1001, Group 22, KP1, Long Hung Ward",
+      "addressLocality":"Bien Hoa City",
+      "addressRegion":"Dong Nai",
+      "addressCountry":"VN"
     }
   }
   </script>
